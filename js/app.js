@@ -187,65 +187,64 @@ function scroll(dir){
 function right() {
 
 	if (portrait) {
-		$(div.left_side).attr("style", " margin-left:0vw; transition: margin-left 2s;");
-		$(div.right_side).attr("style", " margin-left:0vw; transition: margin-left 2s;");
-		$(div.left_side).attr("style", " margin-left:0vw; transition: margin-left 2s;");
-		$(div.right_side).attr("style", " margin-left:0vw; transition: margin-left 2s;");
+		$('div.left_side').attr("style", " margin-left:0vw; transition: margin-left 2s;");
+		$('div.right_side').attr("style", " margin-left:0vw; transition: margin-left 2s;");
+		$('div.left_side').attr("style", " margin-left:0vw; transition: margin-left 2s;");
+		$('div.right_side').attr("style", " margin-left:0vw; transition: margin-left 2s;");
 
-		$(div.left_text).attr("style", "opacity: 1; transition: opacity 2s;");
-		$(div.right_text).attr("style", "opacity: 1; transition: opacity 2s;");
-		$(div.left_info).attr("style", "opacity: 1; transition: opacity 2s;");
-		$(div.right_text).attr("style", "opacity: 1; transition: opacity 2s;");
-		$(div.right_side).attr("style", " margin-left:0vw; transition: margin-left 2s;");
+		$('div.left_text').attr("style", "opacity: 1; transition: opacity 2s;");
+		$('div.right_text').attr("style", "opacity: 1; transition: opacity 2s;");
+		$('div.left_info').attr("style", "opacity: 1; transition: opacity 2s;");
+		$('div.right_text').attr("style", "opacity: 1; transition: opacity 2s;");
+		$('div.right_side').attr("style", " margin-left:0vw; transition: margin-left 2s;");
 	}
 
 	if (landscape) {
-		$(div.left_side).attr("style", " margin-left:-25vw; transition: margin-left 2s;");
-		$(div.right_side).attr("style", " margin-left:75vw; transition: margin-left 2s;");
-		$(div.left_text).attr("style", "opacity: 1; transition: opacity 2s;");
-		$(div.right_text).attr("style", "opacity: 0; transition: opacity 2s;");
+		$('div.left_side').attr("style", " margin-left:-25vw; transition: margin-left 2s;");
+		$('div.right_side').attr("style", " margin-left:75vw; transition: margin-left 2s;");
+		$('div.left_text').attr("style", "opacity: 1; transition: opacity 2s;");
+		$('div.right_text').attr("style", "opacity: 0; transition: opacity 2s;");
 	}
 }
 
 function left() {
 
 	if (portrait) {
-		$(div.left_side).attr("style", " margin-left:-100vw; transition: margin-left 2s;");
-		$(div.right_side).attr("style", " margin-left:-100vw; transition: margin-left 2s;");
-		$(div.right_text).attr("style", "opacity: 1; transition: opacity 2s;");
-		$(div.left_text).attr("style", "opacity: 1; transition: opacity 2s;");
-		$(div.right_info).attr("style", "opacity: 1; transition: opacity 2s;");
-		$(div.left_info).attr("style", "opacity: 1; transition: opacity 2s;");
-		//$(div.eft_side).attr("style", " margin-left:-50vw; transition: margin-left 2s;");
+		$('div.left_side').attr("style", " margin-left:-100vw; transition: margin-left 2s;");
+		$('div.right_side').attr("style", " margin-left:-100vw; transition: margin-left 2s;");
+		$('div.right_text').attr("style", "opacity: 1; transition: opacity 2s;");
+		$('div.left_text').attr("style", "opacity: 1; transition: opacity 2s;");
+		$('div.right_info').attr("style", "opacity: 1; transition: opacity 2s;");
+		$('div.left_info').attr("style", "opacity: 1; transition: opacity 2s;");
 	}
 
 	if (landscape) {
-		$(div.left_side).attr("style", " margin-left:-75vw; transition: margin-left 2s;");
-		$(div.right_side).attr("style", " margin-left:25vw; transition: margin-left 2s;");
-		$(div.left_text).attr("style", "opacity: 0; transition: opacity 2s;");
-		$(div.right_text).attr("style", "opacity: 1; transition: opacity 2s;");
+		$('div.left_side').attr("style", " margin-left:-150vw; transition: margin-left 2s;");
+		$('div.right_side').attr("style", " margin-left:25vw; transition: margin-left 2s;");
+		$('div.left_text').attr("style", "opacity: 0; transition: opacity 2s;");
+		$('div.right_text').attr("style", "opacity: 1; transition: opacity 2s;");
 
 	}
 }
 
 
 function screen_reset() {
-	$(div.eft_text).attr("style", "opacity: 0; transition: opacity 2s;");
-	$(div.ight_text).attr("style", "opacity: 0; transition: opacity 2s;");
+	$('div.left_text').attr("style", "opacity: 0; transition: opacity 2s;");
+	$('div.right_text').attr("style", "opacity: 0; transition: opacity 2s;");
 
-	$(div.ight_info).attr("style", "opacity: 1; transition: opacity 2s;");
-	$(div.eft_info).attr("style", "opacity: 1; transition: opacity 2s;");
+	$('div.right_info').attr("style", "opacity: 1; transition: opacity 2s;");
+	$('div.left_info').attr("style", "opacity: 1; transition: opacity 2s;");
 
 	if (portrait) {
-		$(div.ight_side).attr("style", " margin-left:0vw; transition: margin-left 2s;");
-		$(div.eft_side).attr("style", " margin-left:-100vw; transition: margin-left 2s;");
+		$('div.right_side').attr("style", " margin-left:0vw; transition: margin-left 2s;");
+		$('div.left_side').attr("style", " margin-left:-100vw; transition: margin-left 2s;");
 	}
 
 	if (landscape) {
-		$(div.ight_side).attr("style", " margin-left:50vw; transition: margin-left 2s;");
-		$(div.eft_side).attr("style", " margin-left:-50vw; transition: margin-left 2s;");
+		$('div.right_side').attr("style", " margin-left:50vw; transition: margin-left 2s;");
+		$('div.left_side').attr("style", " margin-left:-50vw; transition: margin-left 2s;");
 	}
-	alert("reset");
+	//alert("reset");
 }
 
 function setResetAll() {

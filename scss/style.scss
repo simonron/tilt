@@ -179,7 +179,7 @@ section#page-1{
 /********************super clever bits********************/
 /********************super clever bits********************/
 /********************super clever bits********************/
-/*div.left_side {
+div.left_side {
   float: left;
   transition: margin-left 2s;
   border-left: solid #000 100vw;
@@ -210,7 +210,9 @@ div.left_side:active .left_text {
   transition: opacity 2s;
 }
 div.left_side {
-  height: 43vh;
+  height: 100vh;
+  left:-25vw;
+  border-left:50vw solid transparent;
 }
 div.right_side {
   margin-top: 0vh;
@@ -246,7 +248,7 @@ div.right_side:hover {
 div.right_side:hover .right_text {
   opacity: 1;
   transition: opacity 2s;
-}*/
+}
 /**** END ****************super clever bits********************/
 /**** END ****************super clever bits********************/
 /**** END ****************super clever bits********************/
