@@ -1,0 +1,445 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+  color: #606263;
+  line-height: 1.4;
+  width: 100%;
+  background: transparent url("../images/background.jpg") repeat scroll center top/cover;
+}
+
+div.tiltIndicatorTop,
+div.tiltIndicatorBottom {
+  position: fixed;
+  width: 100vw;
+  height: 10px;
+  z-index: 1000;
+  top:0;
+}
+div.tiltIndicatorBottom {
+  top: 98vh;;
+  height:10px;
+}
+
+div.tiltIndicatorRight,
+div.tiltIndicatorLeft {
+  position: fixed;
+  width: 10px;
+  height: 500%;
+  z-index: 1000;
+}
+div.tiltIndicatorRight{
+  margin-left:98.5vw;
+}
+div#dataContainerMotion {
+  position: fixed;
+  z-index: 2000;
+  color: #000;
+  background: #ffffff;
+  bottom: 50vh;
+  left: 10px;
+  width: 350px;
+  opacity: 0.9;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  max-width: 1400px;
+}
+
+section#page-1{
+
+}
+.buttons{
+  position:fixed;
+  margin-left:20vw;
+  z-index:100;
+}
+.left_text,
+.right_text {
+  width: 22em;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2em;
+  top: 30vh;
+  position: absolute;
+}
+.left_text div,
+.right_text div {
+  text-align: justify;
+  font-size: 8px;
+  line-height: 1em !important;
+  position: relative;
+  top: 40px;
+}
+.left_text a,
+.right_text a {
+  padding: 24px 20px;
+}
+.left_side {
+  width: 75vw;
+  height: 100vh;
+  float: left;
+  background: transparent url("../images/triffle.png") no-repeat scroll left bottom;
+  transition: margin-left 2s;
+  border-left: solid transparent 25vw;
+  margin-left: -25vw;
+  position:relative;
+}
+.left_side div.left_info {
+  //float: right;
+  margin-left: 4vw;
+  width: 30vw;
+  position: relative;
+  z-index: 10;
+}
+.left_side div.left_info h2 {
+  text-align: center;
+  margin-top: 5vh;
+  background: #d22;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0.8;
+  font-size: 4vw;
+}
+.left_side .left_text {
+  opacity: 0;
+  transition: opacity 2s;
+  color: #fff;
+  margin-left: -300px;
+  background: #999;
+  padding: 10px;
+  border-radius: 10px;
+}
+.left_side:hover {
+  margin-left: 0;
+  position: relative;
+  z-index: 10;
+}
+.left_side:hover .left_text {
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.right_side {
+  width: 75vw;
+  height: 100vh;
+  margin-left: 50vw;
+  background: transparent url("../images/us.png ") no-repeat scroll left bottom;
+  transition: margin-left 2s;
+  /* For Safari 3.1 to 6.0 */
+  border-right: solid 25vw transparent;
+  margin-right: -25vw;
+  position: relative;
+  z-index: 1;
+}
+.right_side div.right_info {
+  float: right;
+  margin-right: 49vw;
+  padding-left: 6vw;
+  position: absolute;
+  width: 40vw;
+  z-index: 1;
+}
+.right_side div.right_info h2 {
+  text-align: center;
+  margin-top: 5vh;
+  background: #d22;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0.8;
+  font-size: 3vw;
+}
+.right_side .right_text {
+  opacity: 0;
+  transition: opacity 2s;
+  color: #fff;
+  margin-left: 23vw;
+  background: #999;
+  padding: 10px;
+  border-radius: 10px;
+}
+.right_side:hover {
+  margin-left: 25vw;
+  position: relative;
+  z-index: 10;
+}
+.right_side:hover .right_text {
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+
+
+
+
+
+/********************super clever bits********************/
+/********************super clever bits********************/
+/********************super clever bits********************/
+/*div.left_side {
+  float: left;
+  transition: margin-left 2s;
+  border-left: solid #000 100vw;
+  //margin-left: -100vw;
+  width: 200vw;
+  z-index: 10;
+}
+div.left_side .left_text {
+  opacity: 1;
+  transition: opacity 2s;
+  color: #fff;
+  margin-left: -100vw;
+  width: 80vw;
+  margin-top: 10vh;
+  position: absolute;
+  z-index: 200;
+  display: block !important;
+}
+div.left_side:hover,
+div.left_side:active {
+  margin-left: 0;
+  position: relative;
+  z-index: 10;
+}
+div.left_side:hover .left_text,
+div.left_side:active .left_text {
+  opacity: 1;
+  transition: opacity 2s;
+}
+div.left_side {
+  height: 43vh;
+}
+div.right_side {
+  margin-top: 0vh;
+  transition: margin-left 2s;
+  border-right: solid #000 100vw;
+  //margin-left: 0vw;
+  width: 200vw;
+  z-index: 10;
+}
+div.right_side div.right_info {
+  left: 3vw;
+  margin-left: 0;
+  top: 0vh;
+}
+div.right_side img {
+  margin-top: 0vh;
+}
+div.right_side .right_text {
+  color: #fff;
+  opacity: 1;
+  margin-left: 100vw;
+  width: 80vw;
+  position: absolute;
+  z-index: 200;
+  top: 0vh;
+}
+div.right_side:hover {
+  //margin-left: -100vw;
+  margin-left: 25vw;
+  position: relative;
+  z-index: 10;
+}
+div.right_side:hover .right_text {
+  opacity: 1;
+  transition: opacity 2s;
+}*/
+/**** END ****************super clever bits********************/
+/**** END ****************super clever bits********************/
+/**** END ****************super clever bits********************/
+/**** END ****************super clever bits********************/
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////RESPONSIVE STUFF/////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: 1300px) {
+  .left_side {
+    width: 100vw;
+    margin-left: -50vw;
+  }
+  .left_side:hover {
+    margin-left: -25vw;
+  }
+  .right_side {
+    width: 100vw;
+  }
+  .right_side:hover {
+    margin-left: 25vw;
+  }
+}
+.left_side img,
+.right_side img {
+  margin-top: 30vh;
+}
+
+
+
+@media (max-width: 1023px) {
+  .left_side .left_text {
+    margin-left: -35vw;
+    width: 30vw;
+  }
+  .right_side .right_text {
+    margin-left: 23vw;
+    width: 40vw;
+  }
+
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+
+  .left_side .left_text {
+    margin-left: 0vw;
+    width: 100vw;
+    margin-top: 0vh;
+    opacity: 1;
+  }
+  .right_side .right_text {
+    margin-left: 0vw;
+    width: 100vw;
+    margin-top: 0vh;
+  }
+
+  .left_side,
+  .right_side {
+    position: relative;
+    left: 0px;
+    margin: 0px;
+    height: 50vh;
+  }
+  .left_side {
+    width: 64vh;
+    border: none;
+    margin: 0px;
+    left: 0px;
+    top: 50px;
+  }
+  .right_side {
+    width: 64vh;
+    top: 50vh;
+    border: none;
+    margin: 0px;
+    left: 0px;
+  }
+  .left_side img,
+  .right_side img {
+    margin-top: 40vh;
+  }
+  div.left_side div.left_info {
+    width: 70%;
+    position: absolute;
+    left: 8vw;
+    margin-left: 0px;
+    top: -35vh;
+  }
+  div.right_side div.right_info {
+    width: 75%;
+    position: absolute;
+    left: 3vw;
+    margin-left: 0px;
+    top: -35vh;
+  }
+}
+
+
+
+@media (max-width: 414px) {
+  #header div.logo img {
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .left_side img,
+  .right_side img {
+    margin-top: 37vh;
+  }
+
+  .left_text,
+  .right_text {
+    opacity: 1;
+    transition: opacity 0.5s;
+    display: block;
+  }
+  .left_side div.left_info {
+    left: 100vw;
+    width: 35vw;
+  }
+  .left_side .left_text {
+    margin-left: -93vw;
+    width: 80%;
+  }
+}
+@media (max-width: 320px) {
+  .right_side {
+    top: 57vh;
+  }
+
+  div.right_side div.right_info {
+    top: 8vh;
+  }
+}
+@media (max-width: 480px) {
+  div.left_side {
+    background: transparent url("../images/moon.jpg") no-repeat scroll -152.5vw bottom/cover;
+    border-left: 100vw solid transparent;
+  }
+  .left_side .left_text {
+    margin-left: 0vw;
+    width: 50vw;
+  }
+  .left_side div.left_info h2 {
+    background: #d22 none repeat scroll 0 0;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 10vw;
+    left: 60vw;
+    margin-left: -199px;
+    margin-top: 54vh;
+    opacity: 0.8;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 60vw;
+  }
+  div.right_side {
+    border-right: 100vw solid transparent;
+    background: transparent url("../images/sun.jpg") no-repeat scroll 100vw bottom/cover;
+  }
+  .right_side div.right_info h2 {
+    font-size: 7vw;
+  }
+  .right_side .right_text {
+    margin-top: 10vh;
+    background: none;
+  }
+  .left_side div.left_info {
+    width: 33vw;
+  }
+  .right_side div.right_info {
+    width: 33vw;
+  }
+
+}
+//////////////////////////////////END///////////////////////////////////////////////
+///////////////////////////RESPONSIVE STUFF/////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
