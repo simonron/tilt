@@ -1,0 +1,283 @@
+/* line 1, ../scss/style.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+  color: #606263;
+  line-height: 1.4;
+  width: 100%;
+}
+
+/* line 12, ../scss/style.scss */
+div#dataContainerMotion {
+  position: fixed;
+  z-index: 2000;
+  color: #000;
+  background: #ffffff;
+  width: 350px;
+  opacity: 0.7;
+  left: 20vw;
+  top: 20vh;
+  padding: 10px;
+  display: none;
+}
+
+/* line 24, ../scss/style.scss */
+.buttons {
+  position: fixed;
+  width: 3vw;
+  height: 0;
+  display: block;
+  float: left;
+  z-index: 100;
+}
+
+/* line 33, ../scss/style.scss */
+.left_info h2 {
+  width: 50vw;
+  padding: 8px;
+  background: #fff;
+}
+
+/* line 38, ../scss/style.scss */
+.button {
+  padding: 5px;
+  margin: 5px;
+}
+
+/* line 46, ../scss/style.scss */
+section {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* line 50, ../scss/style.scss */
+h2 {
+  position: relative;
+  z-index: 100;
+  padding: 8px;
+  background: #fff;
+}
+
+/* line 57, ../scss/style.scss */
+.big_number {
+  font-size: 100vh;
+  text-align: center;
+  line-height: 0px;
+  position: relative;
+  top: 50vh;
+}
+
+/* line 66, ../scss/style.scss */
+div.tiltIndicatorTop,
+div.tiltIndicatorBottom {
+  position: fixed;
+  width: 100vw;
+  height: 10px;
+  z-index: 1000;
+  top: 0;
+}
+
+/* line 73, ../scss/style.scss */
+div.tiltIndicatorBottom {
+  top: 99vh;
+  height: 10px;
+}
+
+/* line 79, ../scss/style.scss */
+div.tiltIndicatorRight,
+div.tiltIndicatorLeft {
+  position: fixed;
+  width: 10px;
+  height: 500%;
+  z-index: 1000;
+}
+
+/* line 85, ../scss/style.scss */
+div.tiltIndicatorRight {
+  margin-left: 98.5vw;
+}
+
+/* line 89, ../scss/style.scss */
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+/* line 93, ../scss/style.scss */
+#demo {
+  margin-top: 17vh;
+  font-size: 20px;
+  width: 20vw;
+  margin-left: 2vw;
+  display: block;
+  line-height: 1.2em;
+}
+
+/* line 102, ../scss/style.scss */
+section#page-1 {
+  background: #f66;
+}
+
+/* line 105, ../scss/style.scss */
+section#page-2 {
+  background: #6f6;
+}
+
+/* line 108, ../scss/style.scss */
+section#page-3 {
+  background: #66f;
+}
+
+/* line 111, ../scss/style.scss */
+section#page-4 {
+  background: #ff6;
+}
+
+/* line 116, ../scss/style.scss */
+.left_side,
+.right_side {
+  position: relative;
+}
+
+/* line 120, ../scss/style.scss */
+h2 {
+  background: #fff;
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+  top: 50vh;
+}
+
+/* line 127, ../scss/style.scss */
+.middle {
+  display: block;
+  width: 70vw;
+  text-align: center;
+  position: relative;
+  top: -20vh;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+}
+/* line 137, ../scss/style.scss */
+.middle h2 {
+  padding: 8px;
+  background: #f0f;
+  font-size: 30px;
+}
+
+/********************super clever bits********************/
+/********************super clever bits********************/
+/********************super clever bits********************/
+/* line 149, ../scss/style.scss */
+div.left_side {
+  float: left;
+  transition: margin-left 2s;
+  border-left: solid transparent 25vw;
+  width: 100vw;
+  z-index: 10;
+}
+
+/* line 156, ../scss/style.scss */
+div.left_side .left_text {
+  opacity: 1;
+  transition: opacity 2s;
+  color: #fff;
+  margin-left: -25vw;
+  width: 80vw;
+  position: absolute;
+  z-index: 200;
+  display: block !important;
+}
+
+/* line 167, ../scss/style.scss */
+div.left_side:hover,
+div.left_side:active {
+  margin-left: 0;
+  position: relative;
+  z-index: 10;
+}
+
+/* line 173, ../scss/style.scss */
+div.left_side:hover .left_text,
+div.left_side:active .left_text {
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+/* line 177, ../scss/style.scss */
+div.left_side {
+  margin-left: -100vw;
+  border-left: 25vw solid transparent;
+}
+
+/* line 181, ../scss/style.scss */
+div.right_side {
+  transition: margin-left 2s;
+  border-right: solid transparent 100vw;
+  width: 100vw;
+  z-index: 10;
+}
+
+/* line 187, ../scss/style.scss */
+div.right_side div.right_info {
+  left: 3vw;
+  margin-left: 0;
+}
+
+/* line 193, ../scss/style.scss */
+div.right_side .right_text {
+  color: #fff;
+  opacity: 1;
+  margin-left: 140vw;
+  width: 50vw;
+  padding: 5px !important;
+  position: absolute;
+  z-index: 200;
+}
+
+/* line 202, ../scss/style.scss */
+div.right_side:hover {
+  margin-left: 25vw;
+  position: relative;
+  z-index: 10;
+}
+
+/* line 207, ../scss/style.scss */
+div.right_side:hover .right_text {
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+/**** END ****************super clever bits********************/
+/**** END ****************super clever bits********************/
+/**** END ****************super clever bits********************/
+/**** END ****************super clever bits********************/
+@media (max-width: 1300px) {
+  /* line 232, ../scss/style.scss */
+  .left_side {
+    width: 100vw;
+    margin-left: -50vw;
+  }
+
+  /* line 236, ../scss/style.scss */
+  .left_side:hover {
+    margin-left: -25vw;
+  }
+
+  /* line 239, ../scss/style.scss */
+  .right_side {
+    width: 100vw;
+  }
+
+  /* line 242, ../scss/style.scss */
+  .right_side:hover {
+    margin-left: 25vw;
+  }
+}
+/* line 419, ../scss/style.scss */
+div.left_side,
+div.right_side {
+  height: 100vh;
+}
