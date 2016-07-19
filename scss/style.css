@@ -4,11 +4,8 @@ body {
   font-size: 16px;
   color: #606263;
   line-height: 1.4;
-  width: 100%;
-}
-div.TiltIndicators{
-  //display:none;
-}
+  width: 100%; }
+
 div#dataContainerMotion {
   position: fixed;
   z-index: 2000;
@@ -16,51 +13,44 @@ div#dataContainerMotion {
   background: #ffffff;
   width: 350px;
   opacity: 0.7;
-  left:20vw;
-  top:20vh;
-  padding:10px;
-  display:none;
-}
-.buttons{
-  position:fixed;
-  width:3vw;
-  height:0;
-  display:block;
-  float:left;
-  z-index:100;
-  //display:none;
-}
-.left_info h2{
-  width:50vw;
-  padding:8px;
-  background:#fff;
-}
-.button{
-  padding:5px;
-  margin:5px;
-}
-#demo {
-  //display:none;
-}
+  left: 20vw;
+  top: 20vh;
+  padding: 10px;
+  display: none; }
 
-section{
-  height:100vh;
-  overflow: hidden;
-}
-h2{
-  position:relative;
-  z-index:100;
-  padding:8px;
-  background:#fff;
-}
+.buttons {
+  position: fixed;
+  width: 3vw;
+  height: 0;
+  display: block;
+  float: left;
+  z-index: 100; }
 
-.big_number{
-  font-size:100vh;
-  text-align:center;
-  line-height:0px;
-  position:relative;
-  top:50vh;
-}
+.left_info h2 {
+  width: 50vw;
+  padding: 8px;
+  background: #fff; }
+
+.button {
+  padding: 5px;
+  margin: 5px; }
+
+section {
+  height: 100vh;
+  overflow: hidden; }
+
+h2 {
+  position: relative;
+  z-index: 100;
+  padding: 8px;
+  background: #fff; }
+
+.big_number {
+  font-size: 100vh;
+  text-align: center;
+  line-height: 0px;
+  position: relative;
+  top: 50vh; }
 
 div.tiltIndicatorTop,
 div.tiltIndicatorBottom {
@@ -68,80 +58,70 @@ div.tiltIndicatorBottom {
   width: 100vw;
   height: 10px;
   z-index: 1000;
-  top:0;
-}
+  top: 0; }
+
 div.tiltIndicatorBottom {
-  top: 99vh;;
-  height:10px;
-}
+  top: 99vh;
+  height: 10px; }
 
 div.tiltIndicatorRight,
 div.tiltIndicatorLeft {
   position: fixed;
   width: 10px;
   height: 500%;
-  z-index: 1000;
-}
-div.tiltIndicatorRight{
-  margin-left:98.5vw;
-}
+  z-index: 1000; }
+
+div.tiltIndicatorRight {
+  margin-left: 98.5vw; }
 
 .container {
   width: 100%;
-  height: 100vh;
-}
-#demo{
-  margin-top:17vh;
-  font-size:20px;
-  width:20vw;
-  margin-left:2vw;
-  display:block;line-height:1.2em;
-}
+  height: 100vh; }
 
+#demo {
+  margin-top: 17vh;
+  font-size: 20px;
+  width: 20vw;
+  margin-left: 2vw;
+  display: block;
+  line-height: 1.2em; }
 
-section#page-1{
-  background:#f66;
-}
-section#page-2{
-  background:#6f6;
-}
-section#page-3{
-  background:#66f;
-}
-section#page-4{
-  background:#ff6;
-}
+section#page-1 {
+  background: #f66; }
+
+section#page-2 {
+  background: #6f6; }
+
+section#page-3 {
+  background: #66f; }
+
+section#page-4 {
+  background: #ff6; }
 
 .left_side,
 .right_side {
-  position:relative;
-}
+  position: relative; }
 
-h2{
-  background:#fff;
-  border-radius:10px;
-  display:block;
-  position:absolute;
-  top:50vh;
-}
+h2 {
+  background: #fff;
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+  top: 50vh; }
+
 .middle {
   display: block;
   width: 70vw;
   text-align: center;
   position: relative;
   top: -20vh;
-
   margin-left: auto;
   margin-right: auto;
-  opacity:0.9;
-  h2 {
+  opacity: 0.9; }
+  .middle h2 {
     padding: 8px;
     background: #f0f;
-    font-size: 30px;
-  }
-}
-
-
+    font-size: 30px; }
 
 /********************super clever bits********************/
 /********************super clever bits********************/
@@ -151,8 +131,8 @@ div.left_side {
   transition: margin-left 2s;
   border-left: solid transparent 25vw;
   width: 100vw;
-  z-index: 10;
-}
+  z-index: 10; }
+
 div.left_side .left_text {
   opacity: 1;
   transition: opacity 2s;
@@ -161,89 +141,68 @@ div.left_side .left_text {
   width: 80vw;
   position: absolute;
   z-index: 200;
-  display: block !important;
-}
+  display: block !important; }
+
 div.left_side:hover,
 div.left_side:active {
   margin-left: 0;
   position: relative;
-  z-index: 10;
-}
+  z-index: 10; }
+
 div.left_side:hover .left_text,
 div.left_side:active .left_text {
   opacity: 1;
-  transition: opacity 2s;
-}
+  transition: opacity 2s; }
+
 div.left_side {
-  margin-left:-100vw;
-  border-left:25vw solid transparent;
-}
+  margin-left: -100vw;
+  border-left: 25vw solid transparent; }
+
 div.right_side {
   transition: margin-left 2s;
   border-right: solid transparent 100vw;
   width: 100vw;
-  z-index: 10;
-}
+  z-index: 10; }
+
 div.right_side div.right_info {
   left: 3vw;
-  margin-left: 0;
-}
-
+  margin-left: 0; }
 
 div.right_side .right_text {
   color: #fff;
   opacity: 1;
   margin-left: 140vw;
   width: 50vw;
-  padding:5px !important;
+  padding: 5px !important;
   position: absolute;
-  z-index: 200;
-}
+  z-index: 200; }
+
 div.right_side:hover {
   margin-left: 25vw;
   position: relative;
-  z-index: 10;
-}
+  z-index: 10; }
+
 div.right_side:hover .right_text {
   opacity: 1;
-  transition: opacity 2s;
-}
+  transition: opacity 2s; }
+
 /**** END ****************super clever bits********************/
 /**** END ****************super clever bits********************/
 /**** END ****************super clever bits********************/
 /**** END ****************super clever bits********************/
-
-
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////RESPONSIVE STUFF/////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////
-
 @media (max-width: 1300px) {
   .left_side {
     width: 100vw;
-    margin-left: -50vw;
-  }
-  .left_side:hover {
-    margin-left: -25vw;
-  }
-  .right_side {
-    width: 100vw;
-  }
-  .right_side:hover {
-    margin-left: 25vw;
-  }
-}
+    margin-left: -50vw; }
 
+  .left_side:hover {
+    margin-left: -25vw; }
+
+  .right_side {
+    width: 100vw; }
+
+  .right_side:hover {
+    margin-left: 25vw; } }
 /*
 .left_side img,
 .right_side img {
@@ -414,8 +373,8 @@ div.right_side:hover .right_text {
 ///////////////////////////RESPONSIVE STUFF/////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////*/
-
 div.left_side,
-div.right_side{
-  height:100vh;
-}
+div.right_side {
+  height: 100vh; }
+
+/*# sourceMappingURL=style.css.map */

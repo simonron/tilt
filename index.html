@@ -3,136 +3,131 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Tilt Demo</title>
+    <title>Tilt Demo 4 -Portrait mode only</title>
     <link rel="stylesheet" href="stylesheets/jquery.mobile-1.4.5.css">
     <link rel="stylesheet" href="stylesheets/app.css"/>
     <link rel="stylesheet" href="stylesheets/style.css">
     <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
 <body onload="init()">
-<div class="tiltIndicatorTop"></div>
-<div class="tiltIndicatorRight"></div>
-<div class="tiltIndicatorBottom"></div>
-<div class="tiltIndicatorLeft"></div>
+<div class="TiltIndicators">
+    <div class="tiltIndicatorTop"></div>
+    <div class="tiltIndicatorRight"></div>
+    <div class="tiltIndicatorBottom"></div>
+    <div class="tiltIndicatorLeft"></div>
+</div>
 <div id="dataContainerMotion">
     <h2> which way?</h2></div>
 <div class="buttons">
-<!--    <button class="button" onclick="scroll(+1);">scroll down</button>
-    <button class="button" onclick="scroll(-1);">scroll up</button>-->
-    <button class="button" onclick="left();">scroll LEFT</button>
-    <button class="button" onclick="right();">scroll RIGHT</button>
-</div>
-<div class="container">
-
-
-    <section id="page-1">
-
-        <div class="left_side right_fade">
-            <div class="left_info">
-                <h2>This Is the left info on PAGE ONE </h2>
-
-                <div class="left_text">
-                    left text PAGE ONE !!!! tilt left or right for more or tilt down for page two
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="right_side left_fade">
-                <div class="right_info">
-                    <h2>An HTML gryo demo from Simon Anthony</h2> tilt right
-                    <div class="right_text">
-                        This site and it's contents will respond to tilting of a mobile device.<a
-                            href="mailto:linkedin@torty.org.uk">linkedin @ torty.org.uk</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="page-2">
-
-        <div class="left_side right_fade">
-
-            <div class="left_info">
-                <h2>This is left data headline on page two </h2>
-                <div class="left_text">
-                    =============== Page TWO left text +++++++++++++++
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="right_side left_fade">
-                <div class="right_info">
-                    <h2>=============== Page TWO Right headline +++++++++++++++</h2>
-                    <div class="right_text">
-                        =============== Page TWO RIGHT text +++++++++++++++ <a href="mailto:linkedin@torty.org.uk">linkedin
-                        @ torty.org.uk</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="page-3">
-
-        <div class="left_side right_fade">
-            <div class="left_info">
-                <h2>This card is best seen tilted on a mobile ! </h2>
-                <div class="left_text">
-                    This is page THREE left content
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="right_side left_fade">
-                <div class="right_info">
-                    <h2>This is area THREE</h2>
-                    <div class="right_text">
-                        This is page THREE. <a href="mailto:linkedin@torty.org.uk">linkedin @ torty.org.uk</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="page-4">
-
-        <div class="left_side right_fade">
-            <div class="left_info">
-                <h2>Finally - almost - Page 4 </h2> tilt down again for Page one.
-                <div class="left_text">
-                    This is left text on page 4 4
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="right_side left_fade">
-                <div class="right_info">
-                    <h2>PAGE 4</h2>
-                    <div class="right_text">
-                        This is right data on Page 4. <a href="mailto:linkedin@torty.org.uk">linkedin @ torty.org.uk</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
+    <button class="button" onclick="scroll_func(-1, 1);">scroll up</button>
+    <button class="button" onclick="scroll_func(+1, 1);">scroll down</button>
+    <button class="button" onclick="setleft_lock();">scroll LEFT</button>
+    <button class="button" onclick="middle();">middle</button>
+    <button class="button" onclick="setright_lock();">scroll RIGHT</button>
 
 </div>
+
+
+
+<section id="page-1">
+    <div class="big_number">1
+        <!--  <div id="demo">TIME ??</div>--></div>
+    <!--        <script>
+            document.getElementById("demo").innerHTML = Date();
+        </script>-->
+    <div class="left_side right_fade">
+        <div class="left_info">
+            <h2>This Is the left info on PAGE One </h2>
+            <div class="left_text">
+                <!--<script> document.write(date);</script>-->
+            </div>
+        </div>
+    </div>
+    <div class="middle"><h2>Mobile Web Demo. <br>Tilt mobile to navigate left/right.<br> Shake, (flick or twang) the mobile up/down to page forwards and backwards.</h2></div>
+    <div>
+        <div class="right_side left_fade">
+
+            <div class="right_text">
+                <h2>Tilt the mobile left to see left info. 'flick' up/down for more pages</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="page-2">
+    <div class="big_number">2</div>
+    <div class="left_side right_fade">
+        <div class="left_info">
+            <h2>Tilt until the side goes green - then tilt back.</h2>
+            <div class="left_text">
+            </div>
+        </div>
+    </div>
+    <div class="middle"><h2>This is central 2 content. 'flick' up for page 1.</h2></div>
+
+    <div>
+        <div class="right_side left_fade">
+
+            <div class="right_text">
+                <h2>Tilt again to return to the middle</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="page-3">
+
+    <div class="big_number">3</div>
+
+    <div class="left_side right_fade">
+        <div class="left_info">
+            <h2>Go to <a href="http://torty.org.uk/test1">this page</a> to see a responsive example with images.</h2>
+            <div class="left_text">
+            </div>
+        </div>
+    </div>
+    <div class="middle"><h2>This is central 3 content</h2></div>
+
+    <div>
+        <div class="right_side left_fade">
+
+            <div class="right_text">
+                <h2>page Three right</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="page-4">
+    <div class="big_number">4</div>
+    <div class="left_side right_fade">
+        <div class="left_info">
+            <h2>Any content can be controlled in this way. </h2>
+            <div class="left_text">
+            </div>
+        </div>
+    </div>
+    <div class="middle"><h2>Job offers to <a href="mailto:simon.anthony@tortysoft.com"> simon.anthony @tortysoft.com</a></h2></div>
+    <div>
+        <div class="right_side left_fade">
+
+            <div class="right_text">
+                <h2>page FOUR right</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 
 <script>
     document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
 </script>
 
-<script src="./js/jquery.min.js"></script>
-<script src="bower_components/foundation/js/foundation.min.js"></script>
-<script src="./js/app.js"></script>
+<script src="./js/jquery.min.js" type="text/javascript" ></script>
+<script src="bower_components/foundation/js/foundation.min.js" type="text/javascript" ></script>
+<script src="./js/app.js" type="text/javascript" ></script>
+<script src="./js/shake.js" type="text/javascript" ></script>
 </body>
 </html>
